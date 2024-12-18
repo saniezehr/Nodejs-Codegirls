@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Title</title>
+</head>
+<body>
+
+<table class="table">
+  <thead>
+    <tr id="head">
+      <th scope="col">Names</th>
+      <!-- <th id="head"></th> -->
+    
+    </tr>
+  </thead>
+  <tbody id="marksub">
+    
+  </tbody>
+</table>
+
+<script>
+
+const sub =["physics","maths","urdu"];
+
+const students=[
+    {
+    name:"hira",
+    mark1:80,
+    mark2:95,
+    mark3:83,
+
+},
+{
+    name:"Insia",
+    mark1:70,
+    mark2:45,
+    mark3:63,
+
+}, {
+    name:"Ahmed",
+    mark1:74,
+    mark2:86,
+    mark3:69,
+
+}, {
+    name:"Sara",
+    mark1:68,
+    mark2:93,
+    mark3:67,
+
+},
+]
+const head = document.getElementById('head');
+const table = document.getElementById('marksub');
+
+sub.forEach(head1 => {
+    const head2 =`<th scope="col">${head1}</th>`
+    head.innerHTML += head2;
+})
+
+students.forEach(std => {
+
+    const row =`
+    <tr>
+      <td>${std.name}</td>
+      <td>${std.mark1}</td>
+      <td>${std.mark2}</td>
+      <td>${std.mark3}</td>
+    </tr>`
+    table.innerHTML += row;
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
