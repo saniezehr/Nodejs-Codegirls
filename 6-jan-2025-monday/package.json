@@ -1,0 +1,15 @@
+{
+  "name": "6-jan-2025-monday",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "express": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

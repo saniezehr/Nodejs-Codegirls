@@ -18,7 +18,8 @@
 // readfile.on('data',function(chunck){
 //     writefile.write(chunck);
 // });
-const http = require ("http")
+// const http = require ("http")
+import http from 'http';
 const writebody = function(req,res){
     res.writeHead(200,{'content-type':'html'})
 res.write('<h1>hello!</h1>');
@@ -27,3 +28,6 @@ res.end();
 }
 const server = http.createServer(writebody);
 server.listen(8000);
+http.createServer(function(req,res){
+    res
+});
