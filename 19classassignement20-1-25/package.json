@@ -1,0 +1,12 @@
+{
+  "name": "19classassignement20-1-25",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "express": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
