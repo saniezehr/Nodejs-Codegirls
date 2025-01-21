@@ -49,27 +49,3 @@ const orders = [
 
 
 
-
-// function getOrderByUserId(userId) {
-//     return new Promise((resolve, reject) => {
-//         const userOrder = orders.find(order => order.userid === userId);
-//         if (userOrder) {
-//             resolve(userOrder);
-//         } else {
-//             reject('No orders found for this user.');
-//         }
-//     });
-// }
-
-// async function fetchOrder(userId) {
-//     try {
-//         const userOrder = await getOrderByUserId(userId);
-//         console.log(`First order for user ID ${userId}:`, userOrder);
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
-
-// // Example usage
-// fetchOrder(1); // Fetch first order for user ID 1
-// fetchOrder(3); // Fetch first order for user ID 3 (no orders, will reject)
