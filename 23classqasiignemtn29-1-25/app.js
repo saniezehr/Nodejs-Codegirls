@@ -27,6 +27,7 @@ res.send('user data added to cookie');
 app.get('/getuser', (req, res)=>{ 
 //shows all the cookies 
 res.send(req.cookies); 
+req.send("add data")
 }); 
 
 //server listens to port 3000 
